@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/walletImage"
+        android:layout_width="395dp"
+        android:layout_height="713dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dp"
+        android:scaleType="center"
+        android:src="@drawable/logo_app" />
+
+    <LinearLayout
+        android:id="@+id/verticalLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/walletImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-100dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/logoImage"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/logo_gestion_stock"/>
+
+            <TextView
+                android:id="@+id/appName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GestStock"
+                android:textColor="@android:color/white"
+                android:textSize="32sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Simplifiez la gestion, amplifiez les résultats"
+            android:textColor="#73737f"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/getStartedButton"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/rounded_button"
+            android:text="Get started"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>
